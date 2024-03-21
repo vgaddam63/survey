@@ -1,0 +1,274 @@
+/*Applicable for all HTML pages*/
+*{
+	margin:0;
+	/*padding: 10px;*/
+	font-size: 20px;
+}
+.header
+{
+	height: 100vh;
+	width: 100vw;
+	background-image:  url(images/bg-3.png);
+	background-color: #006633;
+	background-position: center;
+	background-size: cover;
+	background-attachment:  scroll;
+	position: sticky;
+	background-repeat: repeat;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: auto;
+}
+.header_course
+{
+	height: 100vh;
+	width: 100vw;
+	background-image:  url(images/bg-3.png);
+	background-color: #006633;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: inherit;
+	position: absolute;
+	background-repeat: repeat;
+	font-family: 'Montserrat', sans-serif;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("bg-1.jpeg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+nav{
+	display: flex;
+	padding: 20px 20px;
+	justify-content: space-between;
+	color: #ede507;
+	background-color: #ffcd32;
+	
+}
+nav img{
+	 width: 400px;
+}
+.nav-links{
+	flex: 1;
+	border-left-color: #ede507;
+	text-align: right;
+	position: sticky;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	/*padding: 1px 2px;*/
+	
+
+} 
+.nav-links ul li a{
+	/*color: #e6da07;*/
+	display: block;
+	    color: darkgreen;
+	font-family: 'Montserrat';
+}
+
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: darkgreen;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+
+}
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.text-box h1{
+	font-size: 28px;
+	color: #e6da07;
+}
+
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 15px;
+	color: #e6da07;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* ----------Courses-------------*/
+
+
+.course{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 1200px;
+	background-color: #a3a19d;
+}
+h1{
+	font-size: 28px;
+	font-weight: 600;
+}
+p{
+	font-size: 20px;
+	line-height: 22px;
+	padding: 20px;
+}
+ul{
+	font-size: 20px;
+	line-height: 22px;
+	padding: 20px;
+}
+li{
+	font-size: 20px;
+	line-height: 22px;
+	padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  border-bottom: 0.5px solid ;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: center;
+  margin: 20px;
+  max-width: 10000px;
+  padding: 20px;
+  background-color: #a5a8a6;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=streetaddress], input[type=city], input[type=state], input[type=zip], input[type=number], input[type=email], input[type=url], input[type=state], input[type=date]{
+  width: 900px;
+  padding: 15px;
+  margin: 5px ;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=username], input[type=streetaddress], input[type=city], input[type=state], input[type=zip], input[type=tel], input[type=email], input[type=url], input[type=state], input[type=date] {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=grad]{
+	width: 200px;
+  	padding: 15px;
+  	margin: 5px ;
+  	border: none;
+  	background: #f1f1f1;
+}
+nput[type=grad]{
+	background-color: #ddd;
+  	outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+
+.course{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 1032px;
+	background-color: #006633;
+}
+h1{
+	text-align: left;
+	padding-top: 10px;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: 'Merriweather', serif;
+}
+p{
+	font-size: 20px;
+	line-height: 22px;
+	padding: 20px;
+	color: #e6da07;
+	font-family: 'Montserrat';
+}
+ul{
+	font-size: 20px;
+	line-height: 22px;
+	padding: 20px;
+}
+li{
+	font-size: 20px;
+	line-height: 22px;
+	padding: 20px;
+}
+
+/* Footer image */
+.footer{
+	background-color: #ffcd32;
+	size: 20px;
+	align-content: right;
+	right: 0px;
+	overflow: hidden;
+}
+
+
+.ig{
+	float: right;
+}
+
+.footerlogo
+{
+	background-color: #ffcd32;
+	position: fixed;
+	right:  0px;
+	bottom: 0px;
+	width: auto;
+}
+
+.footerlogoimg{
+	width: 100%;
+	height: 75px;
+}
+

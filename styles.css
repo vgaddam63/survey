@@ -1,0 +1,325 @@
+
+/*Applicable for all HTML pages*/
+*{
+	margin:0;
+	/*padding: 10px;*/
+	font-size: 25px;
+}
+.header
+{
+	height: 100vh;
+	width: 100vw;
+	background-image:  url(images/bg-3.png);
+	background-color: #006633;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed scroll;
+	position: absolute;
+	background-repeat: repeat;
+	font-family: 'Montserrat', sans-serif;
+}
+.header_course
+{
+	height: 100vh;
+	width: 100vw;
+	background-image:  url(images/bg-3.png);
+	background-color: #006633;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: inherit;
+	position: absolute;
+	background-repeat: repeat;
+	font-family: 'Montserrat', sans-serif;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("bg-1.jpeg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+nav{
+	display: flex;
+	padding: 20px 20px;
+	justify-content: space-between;
+	color: #ede507;
+	background-color: #ffcd32;
+	
+}
+nav img{
+	 width: 400px;
+}
+.nav-links{
+	flex: 1;
+	border-left-color: #ede507;
+	text-align: right;
+	position: sticky;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	/*padding: 1px 2px;*/
+	
+
+} 
+.nav-links ul li a{
+	/*color: #e6da07;*/
+	display: block;
+	color: darkgreen;
+	font-size: 20px;
+	font-family: 'Montserrat';
+}
+
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: darkgreen;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+
+}
+
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 79%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.text-box h1{
+	font-size: 28px;
+	color: #ffcd32
+}
+
+.text-box p{
+	text-align: justify-all;
+	margin: 10px 0 40px;
+	font-size: 25px;
+	color: #ffcd32
+	font-family: inherit;
+	
+}
+
+/* ----------Courses-------------*/
+
+
+.course{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 1032px;
+	background-color: #006633;
+}
+h1{
+	text-align: left;
+	padding-top: 10px;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: 'Merriweather', serif;
+}
+p{
+	font-size: 25px;
+	line-height: 22px;
+	padding: 20px;
+	color: #e6da07;
+	font-family: 'Montserrat';
+}
+ul{
+	font-size: 20px;
+	line-height: 22px;
+	padding: 20px;
+}
+li{
+	font-size: 20px;
+	line-height: 22px;
+	padding: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+tr {
+  border-bottom: 0.5px solid ;
+  align-items: center;
+  text-align: -webkit-left;
+  color: #e6da07;
+  border-spacing: 20px;
+}
+
+td{
+	border-spacing: 20px;
+}
+
+.button {
+	  background-color: #ffcd32; /* Green */
+	  border: none;
+	  color: #006633;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 35px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  font-weight: bold;
+}
+
+.button1 {width: 250px;}
+.button2 {width: 50%;}
+.button3 {width: 100%;}
+.button4 {width: 150%;}
+
+
+/* For Tables to show requirements*/
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/*For buttoon to expand*/
+.toggle-wrap{
+	margin: 0;
+}
+
+h3.toggle{
+	border-bottom: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: 600;
+	color: yellow;
+}
+
+.toggle button span:after {
+    float: right;
+    content: "";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-size: 1.1em;
+    margin-left: 5px;
+}
+
+
+
+/*Footer styling*/
+
+.footer{
+	
+	background-color: #ffcd32;
+	size: 20px;
+	align-content: right;
+	right: 0px;
+	bottom; 0px;
+	overflow: hidden;
+}
+
+
+.ig{
+	
+	float: right;
+}
+
+
+
+/*For Table padding*/
+th, td {
+	padding: 10px;
+}
+
+/*For Box shadowing and Heading*/
+.shadow{
+	border: 5px solid;
+  	padding: 10px;
+  	width: 1500px;
+  	position: center;
+  	box-shadow: 20px 22px 20px 5px #ffcd32;
+  	text-align: center;
+  	font-size: revert;
+  	border-color: green;
+  	background-color: #ffcd32;
+
+}
+
+
+.pa{
+	font-size: 30px;
+	line-height: 22px;
+	padding: 20px;
+	color: green;
+	font-family: 'Montserrat';
+	font-weight: 600;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+
+/* sFixed logo to Official Web site*/
+.footerlogo
+{
+	background-color: #ffcd32;
+	position: fixed;
+	right:  0px;
+	bottom: 0px;
+	width: auto;
+}
+
+.footerlogoimg{
+	width: 100%;
+	height: 75px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GMU-Student Survey</title>
+	<link rel="stylesheet" href="style_survey.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header">
+		<nav>
+			<a href="GMU_site.html"><img src="images/dept.png"></a>
+			<div class="nav-links">
+				<ul>
+					<li><a href="GMU_site.html">HOME</a></li>
+					<li><a href="survey.html">STUDENT SURVEY</a></li>
+				</ul>
+				
+			</div>
+		</nav>
+		<br>
+		<h1 style=" text-align: center; color: #ffcd32">Student Survey Page</h1>
+		<!-- <div class="header"> -->
+		  <form action="/action_page.php" class="container" style="  width: 90%; margin-left: 5%; text-align: left; padding-right: 0;">
+		    
+		    <br>
+		    <label for="username" style="padding-right: 152px;"><b>Name*:</b></label>
+		    <input type="text" placeholder="Enter Name (eg. xxxx xxx)" name="username" autocomplete="Username" autofocus="username" required>
+		    <br>
+		    <label for="streetaddress" style="padding-right: 69px;"><b>Street Address*:</b></label>
+		    <input type="text" placeholder="Enter Street Address" name="streetaddress" autocomplete="Street" required>
+		    <br><label for="city" style="padding-right: 175px;"><b>City*:</b></label>
+		    <input type="text" placeholder="Enter City" name="city" required>
+		    <br><label for="state" style="padding-right: 162px;"><b>State*:</b></label>
+		    <input type="text" placeholder="Enter State" name="state" autocomplete="state" required>
+		    <br><label for="zip" style="padding-right: 182px;"><b>Zip*:</b></label>
+		    <input type="number" placeholder="Enter Zip" name="zip" required>
+		    <br><label for="number" style="padding-right: 23px;"><b>Telephone number*:</b></label>
+		    <input type="number" placeholder="Enter Number (eg. +(00) 123 456 7890" name="number" required>
+		    <br><label for="email" style="padding-right: 156px;"><b>Email*:</b></label>
+    		<input type="email" placeholder="Enter Email (eg. xyz@gmu.edu)" name="email" required>
+			<br><label for="url" style="padding-right: 178px;"><b>URL:</b></label>
+		    <input type="url" placeholder="Enter URL(eg. https//:xyz.com)" name="url" required>
+		    <br><label for="date" style="padding-right: 69px;"><b>Date of Survey*:</b></label>
+		    <input type="date" placeholder="Enter Date" name="date" required>
+		    <br>
+		    <label for="grad" style=" padding-right: 27px"><b>Graduation month*:</b></label>
+				<input type="grad" placeholder="Months" list="months" id="Graduation month" name="Graduation"  />
+
+				<datalist id="months">
+				    <option value="January">
+				    <option value="February">
+				    <option value="March">
+				    <option value="April">
+				    <option value="May">
+				    <option value="June">
+				    <option value="July">
+				    <option value="August">
+				    <option value="September">
+				    <option value="October">
+				    <option value="November">
+				    <option value="December">
+				</datalist>
+				<label for="grad" style=" padding-left: 20px; padding-right: 27px"><b>Year*: </b></label>
+				<input type="grad" placeholder="YYYY" id="Graduation month" name="Graduation" />
+		    <br><br><h3 style="padding-bottom: 10px">What did you liked the most about campus ?</h3>
+		    <input type="checkbox" id="student" name="students" value="Student">
+		    <label for="student">Students</label>
+  			<input type="checkbox" id="location" name="location" value="Location">
+  			<label for="location"> Location</label>
+  			<input type="checkbox" id="campus" name="campus" value="Campus">
+  			<label for="campus"> Campus</label>
+  			<input type="checkbox" id="atmosphere" name="atmosphere" value="Atmosphere">
+  			<label for="atmosphere"> Atmosphere</label>
+  			<input type="checkbox" id="dormrooms" name="dormrooms" value="dormrooms">
+  			<label for="dormrooms"> Dorm rooms</label>
+  			<input type="checkbox" id="sports" name="sports" value="Sports">
+  			<label for="sports"> Sports</label><br>
+
+  			
+  			<br><h3 style="padding-bottom: 10px">How did you find out about George Mason ?</h3>
+  			<input type="radio" id="friends" name="option" value="Friends">
+			<label for="friends">Friends</label><br>
+			<input type="radio" id="television" name="option" value="Television">
+			<label for="television">Television</label><br>  
+			<input type="radio" id="internet" name="option" value="Internet">
+			<label for="internet">Internet</label><br>
+			<input type="radio" id="other" name="option" value="Other">
+			<label for="other">Other</label><br><br>
+
+			<label for="cars" style=" padding-right: 50px">How likely will you reccomend George Mason to others ?</label>
+			<select name="cars" id="cars" placeholder="select ">
+			      <option value="" disabled selected hidden>Select options </option>	
+			      <option value="verlikely">Very Likely</option>
+			      <option value="likely">Likely</option>
+			      <option value="unlikely">Unlikely</option>
+			</select><br>
+			<br><h3>Additional Comments:</h3>
+			<textarea class="form-control" id="message" placeholder="Your Message" rows="10" cols="60" data-error="Write your message" ></textarea>
+			<br>
+			<br>
+		    <button type="submit" class="btn">Submit</button> 
+		  </form>
+
+		<!-- </div> -->
+		
+		
+	</section>
+	
+	<section class="course">
+		<footer class="footerlogo"> <a href="https://www.gmu.edu/"><img class="footerlogoimg" src="images/footer.png"></a></footer>  
+	</section>
+</body>
+</html>
